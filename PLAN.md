@@ -11,7 +11,7 @@ Rule: **every month leaves something public** (repo or post). Mark `[x]` when do
 ## Phase 1 — Foundations (Oct 2026 – Mar 2027)
 
 ### Month 1 · Oct 2026
-- [ ] Local setup: Python (`uv`), PyTorch with CUDA ≥12.8 (RTX 5070 Laptop 8 GB, Blackwell → `--index-url https://download.pytorch.org/whl/cu128`), public GitHub repo `icarus`
+- [x] Local setup: Python (`uv`), PyTorch with CUDA ≥12.8 (RTX 5070 Laptop 8 GB, Blackwell → `--index-url https://download.pytorch.org/whl/cu128`), public GitHub repo `icarus`
 - [ ] 3Blue1Brown — Essence of Linear Algebra (complete)
 - [ ] Karpathy Zero to Hero #1: micrograd (reimplemented without looking)
 - **Checkpoint:** own micrograd trains an MLP on `make_moons` with ≥95% accuracy
@@ -131,4 +131,4 @@ Chosen area (decide in Jan 2028): `____________` (recommended: **evals** or **tr
 | Date | What I did | Link |
 |------|------------|------|
 | 2026-10-12 | Plan revised: local setup (RTX 5070), Month 1 weekly breakdown, notes on rented GPU and CS336 pace | — |
-| 2026-10-13 | Repo translated to English; verified PyTorch 2.11 + cu128 sees the RTX 5070 | — |
+| 2026-10-13 | Repo translated to English; verified PyTorch 2.11 + cu128 sees the RTX 5070; repo published | [veglos/icarus](https://github.com/veglos/icarus) |
