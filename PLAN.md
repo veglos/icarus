@@ -132,3 +132,4 @@ Chosen area (decide in Jan 2028): `____________` (recommended: **evals** or **tr
 |------|------------|------|
 | 2026-10-12 | Plan revised: local setup (RTX 5070), Month 1 weekly breakdown, notes on rented GPU and CS336 pace | — |
 | 2026-10-13 | Repo translated to English; verified PyTorch 2.11 + cu128 sees the RTX 5070; repo published | [veglos/icarus](https://github.com/veglos/icarus) |
+| 2026-10-14 | micrograd: `Value` with `+`, `*`, parent graph and `grad`, written from memory | — |
