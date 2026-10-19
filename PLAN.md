@@ -132,4 +132,6 @@ Chosen area (decide in Jan 2028): `____________` (recommended: **evals** or **tr
 |------|------------|------|
 | 2026-10-12 | Plan revised: local setup (RTX 5070), Month 1 weekly breakdown, notes on rented GPU and CS336 pace | — |
 | 2026-10-13 | Repo translated to English; verified PyTorch 2.11 + cu128 sees the RTX 5070; repo published | [veglos/icarus](https://github.com/veglos/icarus) |
-| 2026-10-14 | micrograd: `Value` with `+`, `*`, parent graph and `grad`, written from memory · 3B1B ch. 1 | — |
+| 2026-10-14 | micrograd: `Value` with `+`, `*`, parent graph and `grad`, written from memory · local `_backward` rules for `+` and `*` · 3B1B ch. 1 | — |
+| 2026-10-16 | Watched 3B1B NN ch. 3–4 (backprop) | — |
+| 2026-10-19 | micrograd: `backward()` via topological sort, written without the video · verified on a shared inner node (`f = d * e`) | — |

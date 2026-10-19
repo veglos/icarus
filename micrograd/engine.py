@@ -7,7 +7,7 @@ class Value:
         self._backward = lambda: None
 
     def __repr__(self):
-        return f"Value(data={self.data}, grad={self.grad})"
+        return f"Value({self.data}|{self.grad})"
 
     def __add__(self, other):
         out = Value(self.data + other.data, (self, other), "+")
@@ -16,7 +16,6 @@ class Value:
             self.grad += out.grad
             other.grad += out.grad
 
-
         out._backward = _backward
         return out
     
@@ -24,21 +23,49 @@ class Value:
         out = Value(self.data * other.data, (self, other), "*")
 
         def _backward():
+
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
 
         out._backward = _backward
+
         return out
+
+    def backward(self):
+        visited = set()
+        order = []
+
+        def build(node):
+            if node in visited:
+                return
+
+            visited.add(node)
+            for n in node._prev:
+                build(n)
+
+            order.append(node)
+
+        build(self)
+        self.grad = 1.0
+
+        print(order)
+
+        for r in reversed(order):
+            r._backward()
+
 
 if __name__ == "__main__":
     a = Value(2.0)
     b = Value(-3.0)
     c = Value(10.0)
+
     e = a * b
     d = e + c
-    
-    d.grad = 1.0
-    d._backward()
-    #e._backward()
+    f = d * e
+
+    f.backward()
+
     print(a,b,c)
+
+
 
