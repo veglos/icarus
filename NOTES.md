@@ -14,3 +14,7 @@
 In english, if we nudge a by a very small amount, 0.000001, what is the rate of change of d? That is all. 
 
 In a neural network, d is the loss value (result of the loss function -how off the output is from the expected result-), and a,b and c play the role of the weights (to be seen later). The derivative tells us which way to nudge the weights in order to reduce the loss, and thus train the model.
+
+# 2026-10-28
+
+After watching Karpathy's video completely, claude told me to write the rest of the Value class by memory. I managed most of it, googling derivatives, except that I forgot that the tanh was imported from the math library.

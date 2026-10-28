@@ -135,3 +135,4 @@ Chosen area (decide in Jan 2028): `____________` (recommended: **evals** or **tr
 | 2026-10-14 | micrograd: `Value` with `+`, `*`, parent graph and `grad`, written from memory · local `_backward` rules for `+` and `*` · 3B1B ch. 1 | — |
 | 2026-10-16 | Watched 3B1B NN ch. 3–4 (backprop) | — |
 | 2026-10-19 | micrograd: `backward()` via topological sort, written without the video · verified on a shared inner node (`f = d * e`) | — |
+| 2026-10-28 | Finished watching Zero to Hero #1 (micrograd) end to end | — |
